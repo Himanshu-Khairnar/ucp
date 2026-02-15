@@ -139,7 +139,9 @@ export default function ChatInterfaceGemini() {
             body: JSON.stringify({
                 productId: selectedProduct.id,
                 amount: selectedProduct.price,
-                ...details
+                ...details,
+                successUrl: 'https://ucp-omega.vercel.app/',
+                failureUrl: 'https://ucp-omega.vercel.app/'
             })
         });
 
